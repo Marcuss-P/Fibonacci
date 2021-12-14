@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+//Marcus Paulo Ribeiro Rodrigues Alves -- 2010665
+
+int fib(int n);
+
+
+main(){
+	int n;
+	printf("Digite um numero: ");
+	scanf("%i", &n);
+	
+	printf("O valor  de %i sequencia de Fibonacci  %i ", n, fib(n));
+	
+}
+
+
+int fib(int n){
+	if( n == 0 ){
+		return 0;
+	}else if( n == 1){
+		return 1;
+	}else{
+		return fib(n-1) + fib(n-2);
+	}
+}
